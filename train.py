@@ -156,7 +156,7 @@ def main():
         print(f"Epoch {epoch+1}: TrainAcc={train_acc:.2f}% ValAcc={val_acc:.2f}%")
 
         
-        torch.save(model.state_dict(), "deepfake_face_model_best.pth")
+        torch.save(model.state_dict(), "deepfake_face_model.pth")
         print("✅ Saved model")
 
     print("Training complete.")
